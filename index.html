@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-4 {
+            width: calc(100% / 3);
+        }
+
+        .col-3 {
+            width: calc(100% / 4);
+        }
+
+        header {
+            background-color: #393d40;
+            color: #fff;
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    list-style: none;
+                    gap: 20px;
+                    align-items: center;
+                    font-weight: 700;
+                }
+            }
+
+            a {
+                color: currentColor;
+                text-decoration: none;
+            }
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .justify-bettween {
+            justify-content: space-between;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .divider {
+            height: 100%;
+            width: 1px;
+            background-color: #333;
+            border-radius: 9999999px;
+            min-height: 40px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .py-3 {
+            padding: 2rem 0;
+        }
+
+        .over-text {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .product_list {
+
+            .product_item {
+                margin: 6px 10px;
+                padding: 6px 10px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.06);
+
+                &:hover {
+                    border-color: #ee4d2d;
+                    transition: all linear .1s;
+                    transform: translateY(-2px);
+                    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+                }
+
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 6px;
+                }
+
+                h3 {
+                    -webkit-line-clamp: 1;
+                }
+
+                p {
+                    -webkit-line-clamp: 4;
+                }
+            }
+        }
+
+        .btn {
+            padding: 6px 10px;
+            background-color: transparent;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        footer {
+            background-color: #393d40;
+            padding: 10px 0;
+            color: #fff;
+
+            h4 {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .col-3 {
+                padding: 0 20px;
+            }
+        }
+    </style>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="/">
+                <h1>
+                    Fukada
+                </h1>
+            </a>
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">BLOG</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">PROFIlE</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">USECASE</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">FEATURE</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="container py-3">
+        <h2 class="text-center">Current New</h2>
+        <p class="text-center" style="line-height: 17px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+            illo mollitia eum delectus
+            ipsam blanditiis
+            dolorum, repellendus, nulla error cupiditate veritatis. Tempora laborum suscipit quidem magni facilis, modi
+            numquam minus. nulla error cupiditate veritatis. Tempora laborum suscipit quidem magni facilis, modi
+            numquam minus?</p>
+        <div class="product_list">
+            <div class="row">
+                <div class="col-4">
+                    <div class="product_item">
+                        <img src="https://cdn.tgdd.vn/Files/2022/07/20/1449349/10-cach-phoi-do-voi-chan-vay-xep-ly-ngan-nang-dong-ca-tinh-cho-ban-nu-202207202121539541.jpg"
+                            alt="">
+                        <div class="product_intro">
+                            <h3 class="over-text">10 cách phối đồ với chân váy xếp ly ngắn năng động, cá tính cho bạn nữ
+                            </h3>
+                            <p class="over-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptate animi illo
+                                dicta reiciendis sequi deserunt molestiae debitis, a perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in! dicta reiciendis sequi deserunt molestiae debitis, a
+                                perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in!
+                            </p>
+                            <hr />
+                            <div class="flex justify-bettween items-center">
+                                <p>04/10/2024</p>
+                                <p>240K</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product_item">
+                        <img src="https://cdn.tgdd.vn/Files/2022/07/20/1449349/10-cach-phoi-do-voi-chan-vay-xep-ly-ngan-nang-dong-ca-tinh-cho-ban-nu-202207202121539541.jpg"
+                            alt="">
+                        <div class="product_intro">
+                            <h3 class="over-text">10 cách phối đồ với chân váy xếp ly ngắn năng động, cá tính cho bạn nữ
+                            </h3>
+                            <p class="over-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptate animi illo
+                                dicta reiciendis sequi deserunt molestiae debitis, a perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in! dicta reiciendis sequi deserunt molestiae debitis, a
+                                perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in!
+                            </p>
+                            <hr />
+                            <div class="flex justify-bettween items-center">
+                                <p>04/10/2024</p>
+                                <p>240K</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product_item">
+                        <img src="https://cdn.tgdd.vn/Files/2022/07/20/1449349/10-cach-phoi-do-voi-chan-vay-xep-ly-ngan-nang-dong-ca-tinh-cho-ban-nu-202207202121539541.jpg"
+                            alt="">
+                        <div class="product_intro">
+                            <h3 class="over-text">10 cách phối đồ với chân váy xếp ly ngắn năng động, cá tính cho bạn nữ
+                            </h3>
+                            <p class="over-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptate animi illo
+                                dicta reiciendis sequi deserunt molestiae debitis, a perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in! dicta reiciendis sequi deserunt molestiae debitis, a
+                                perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in!
+                            </p>
+                            <hr />
+                            <div class="flex justify-bettween items-center">
+                                <p>04/10/2024</p>
+                                <p>240K</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product_item">
+                        <img src="https://cdn.tgdd.vn/Files/2022/07/20/1449349/10-cach-phoi-do-voi-chan-vay-xep-ly-ngan-nang-dong-ca-tinh-cho-ban-nu-202207202121539541.jpg"
+                            alt="">
+                        <div class="product_intro">
+                            <h3 class="over-text">10 cách phối đồ với chân váy xếp ly ngắn năng động, cá tính cho bạn nữ
+                            </h3>
+                            <p class="over-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptate animi illo
+                                dicta reiciendis sequi deserunt molestiae debitis, a perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in! dicta reiciendis sequi deserunt molestiae debitis, a
+                                perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in!
+                            </p>
+                            <hr />
+                            <div class="flex justify-bettween items-center">
+                                <p>04/10/2024</p>
+                                <p>240K</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product_item">
+                        <img src="https://cdn.tgdd.vn/Files/2022/07/20/1449349/10-cach-phoi-do-voi-chan-vay-xep-ly-ngan-nang-dong-ca-tinh-cho-ban-nu-202207202121539541.jpg"
+                            alt="">
+                        <div class="product_intro">
+                            <h3 class="over-text">10 cách phối đồ với chân váy xếp ly ngắn năng động, cá tính cho bạn nữ
+                            </h3>
+                            <p class="over-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptate animi illo
+                                dicta reiciendis sequi deserunt molestiae debitis, a perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in! dicta reiciendis sequi deserunt molestiae debitis, a
+                                perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in!
+                            </p>
+                            <hr />
+                            <div class="flex justify-bettween items-center">
+                                <p>04/10/2024</p>
+                                <p>240K</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product_item">
+                        <img src="https://cdn.tgdd.vn/Files/2022/07/20/1449349/10-cach-phoi-do-voi-chan-vay-xep-ly-ngan-nang-dong-ca-tinh-cho-ban-nu-202207202121539541.jpg"
+                            alt="">
+                        <div class="product_intro">
+                            <h3 class="over-text">10 cách phối đồ với chân váy xếp ly ngắn năng động, cá tính cho bạn nữ
+                            </h3>
+                            <p class="over-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptate animi illo
+                                dicta reiciendis sequi deserunt molestiae debitis, a perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in! dicta reiciendis sequi deserunt molestiae debitis, a
+                                perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in!
+                            </p>
+                            <hr />
+                            <div class="flex justify-bettween items-center">
+                                <p>04/10/2024</p>
+                                <p>240K</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product_item">
+                        <img src="https://cdn.tgdd.vn/Files/2022/07/20/1449349/10-cach-phoi-do-voi-chan-vay-xep-ly-ngan-nang-dong-ca-tinh-cho-ban-nu-202207202121539541.jpg"
+                            alt="">
+                        <div class="product_intro">
+                            <h3 class="over-text">10 cách phối đồ với chân váy xếp ly ngắn năng động, cá tính cho bạn nữ
+                            </h3>
+                            <p class="over-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptate animi illo
+                                dicta reiciendis sequi deserunt molestiae debitis, a perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in! dicta reiciendis sequi deserunt molestiae debitis, a
+                                perferendis fuga optio tempora
+                                laudantium magni eius hic, dolores amet in, a perferendis fuga optio tempora laudantium
+                                magni eius hic, dolores amet in!
+                            </p>
+                            <hr />
+                            <div class="flex justify-bettween items-center">
+                                <p>04/10/2024</p>
+                                <p>240K</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn">Order Left</button>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h4>ABC</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus soluta, ut maiores
+                        consequuntur voluptatum molestiae reprehenderit ducimus sunt possimus optio sit nam vero odio
+                        obcaecati. Nisi doloremque quidem officiis!</p>
+                </div>
+                <div class="col-3">
+                    <h4>ABC</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus soluta, ut maiores
+                        consequuntur voluptatum molestiae reprehenderit ducimus sunt possimus optio sit nam vero odio
+                        obcaecati. Nisi doloremque quidem officiis!</p>
+                </div>
+                <div class="col-3">
+                    <h4>ABC</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus soluta, ut maiores
+                        consequuntur voluptatum molestiae reprehenderit ducimus sunt possimus optio sit nam vero odio
+                        obcaecati. Nisi doloremque quidem officiis!</p>
+                </div>
+                <div class="col-3">
+                    <h4>ABC</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus soluta, ut maiores
+                        consequuntur voluptatum molestiae reprehenderit ducimus sunt possimus optio sit nam vero odio
+                        obcaecati. Nisi doloremque quidem officiis!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
