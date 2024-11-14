@@ -215,9 +215,7 @@ include './connect.php';
                     window.history.pushState({}, document.title, url.toString());
                 });
             }
-
         }
-
     </script>
 </body>
 
